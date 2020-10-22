@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #79A4FA;">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="color: white;">Contact List</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+            <a class="nav-link" href="/contacts" style="color: white;">My Contacts</a>
+            <a class="nav-link" href="/contacts/new" style="color: white;">add Contact </a>
+            <div class="dropdown-divider"></div>
+            <a class="nav-link" href="/logout" style="color: white;">Salir</a>
+        {{else}}
+        <li class="nav-item">
+          <a href="/login" class="nav-link" style="color: white;">Ingresar</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact/create" class="nav-link" style="color: white;">Registrate</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

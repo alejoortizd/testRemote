@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacat List</title>
+    <title>Contact List</title>
     {{!-- BOOTSTRAP4 --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css">
     {{!-- CUSTOM CSS --}}
-    {{#if dev}}
     <link rel="stylesheet" href="/css/main.css">
-    {{else}}
-    <link rel="stylesheet" href="/css/main.min.css">
-    {{/if}}
-    {{!-- fontawesome --}}
-    <script src="https://kit.fontawesome.com/c8576e0fdd.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    {{>navigation}}
 
     <main class="container p-5">
         {{>messages}}

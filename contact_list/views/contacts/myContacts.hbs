@@ -1,0 +1,24 @@
+<div class="modal-footer">
+  <a href="/contacts/contact/create">
+    <button type="button" class="btn btn-primary">New Contact</button>
+  </a>
+</div>
+<div class="row">
+  {{#each contacts}}
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <p><strong>First Name</strong>: {{firstName}}</p>
+        <p><strong>Last Name</strong>: {{lastName}}</p>
+        <p><strong>email</strong>: {{email}}</p>
+        <p><strong>Phone Number</strong>: {{phoneNumber}}</p>
+        <div class="modal-footer">
+          <a href="/contacts/edit/{{_id}}">
+            <button type="button" class="btn btn-primary">Update</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
